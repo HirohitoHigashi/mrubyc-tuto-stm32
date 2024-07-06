@@ -1,7 +1,12 @@
-10.times {|i|
-  puts "Hello, mruby/c #{i}"
-  sleep 1
-}
+$cycle_delay = 1
 
-printf "ABC %d %d\n", 12, 34
-printf "PI=%.2f\n", 3.141592
+while true
+  sw = sw_read()
+  led_write( sw )
+
+  if sw == 1
+    $cycle_delay = 0.2
+  else
+    $cycle_delay = 1
+  end
+end

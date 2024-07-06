@@ -1,5 +1,4 @@
 # 【チュートリアル】mruby/cをSTM32マイコンで動かす
 
-記事「Chapter04: halの仕上げ」  
-https://qiita.com/HirohitoHigashi/items/4e29539416d3c8df332b
-
+記事「Chapter05: GPIOの拡張と、複数プログラムの動作」
+https://qiita.com/HirohitoHigashi/items/63a863c7879748d7fdc8
