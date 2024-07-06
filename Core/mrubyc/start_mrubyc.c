@@ -33,16 +33,26 @@ static void c_led_write(mrbc_vm *vm, mrbc_value v[], int argc)
   HAL_GPIO_WritePin( GPIOA, GPIO_PIN_5, on_off );
 }
 
-/*! HAL（ダミー）
+/*! HAL
 */
 int hal_write(int fd, const void *buf, int nbytes)
 {
-  return 0;
+  extern UART_HandleTypeDef huart2;
+  HAL_UART_Transmit( &huart2, buf, nbytes, HAL_MAX_DELAY );
+
+  return nbytes;
 }
+
+int _write(int file, char *ptr, int len)
+{
+  return hal_write(file, ptr, len);
+}
+
 int hal_flush(int fd)
 {
   return 0;
 }
+
 void hal_abort(const char *s)
 {
 }
