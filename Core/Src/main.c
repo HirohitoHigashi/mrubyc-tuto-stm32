@@ -90,14 +90,8 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-
-  while( 1 ) {
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-	HAL_Delay(500);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-	HAL_Delay(500);
-  }
-
+  void start_mrubyc(void);
+  start_mrubyc();
   /* USER CODE END 2 */
 
   /* Infinite loop */
