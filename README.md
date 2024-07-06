@@ -1,5 +1,4 @@
 # 【チュートリアル】mruby/cをSTM32マイコンで動かす
 
-記事「Chapter01: 環境構築」  
-https://qiita.com/HirohitoHigashi/items/7ef01d074baa27a3b2e7
-
+記事「Chapter03: ハードウェアタイマーの使用」  
+https://qiita.com/HirohitoHigashi/items/1b781a6b1ebfaa0e59a3

@@ -1,6 +1,6 @@
 while true
   led_write( 1 )
-  sleep 0.1        # ここと
+  sleep 1
   led_write( 0 )
-  sleep 0.5        # ここ
+  sleep 1
 end
